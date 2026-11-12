@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng-ca">
+<html lang="en-ca">
   <head>
     <meta charset="UTF-8",
           name="viewport",
@@ -8,16 +8,35 @@
     <title>Exercise 8: Responsive Web Design</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
     <style>
+      
+      html {
+        font-size: 30px;
+      }
+      
       body {
-      font-family: "Pacifico", cursive;
-      font-size: 30px;
-      background-color: aqua;
+        font-family: "Pacifico", cursive;
+        font-size: 30px;
+        background-color: aqua;
       }
 
       /* Responsive Design Additions */
 
       /*your CSS will go here*/
 
+      @media (max-width: 600px) {
+        img, p { width: 100%; }
+        
+        body { 
+          background-color: yellow;
+          font-size: 0.75em;
+        }
+      }
+      
+      @media (min-width: 600px) {
+        img { width: 800px; }
+        p { width: 600px; }
+      }
+      
       /* misc. styling */
 
       ul a {
@@ -69,8 +88,7 @@
       margin-top: 0;
       margin-bottom: 0;
       }
-      
-      @media ()
+    
     </style>
   </head>
   <body>
